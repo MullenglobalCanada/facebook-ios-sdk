@@ -12,10 +12,25 @@ import TestTools
 final class TestAEMManager: _AutoSetup {
 
   var enabled = false
+  var autoSetupStatus = false
+  var source: String?
 
-  func configure(swizzler: _Swizzling.Type, reporter aemReporter: FBSDKCoreKit._AEMReporterProtocol.Type) {}
+  // swiftlint:disable:next function_parameter_count
+  func configure(
+    swizzler: _Swizzling.Type,
+    reporter aemReporter: FBSDKCoreKit._AEMReporterProtocol.Type,
+    eventLogger: EventLogging,
+    crashHandler: CrashHandlerProtocol,
+    featureChecker: _FeatureDisabling,
+    appEventsUtility: _AppEventsUtilityProtocol
+  ) {}
 
   func enable() {
     enabled = true
+  }
+
+  func logAutoSetupStatus(_ optin: Bool, source: String) {
+    autoSetupStatus = optin
+    self.source = source
   }
 }

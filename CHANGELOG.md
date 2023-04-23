@@ -10,11 +10,37 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## Unreleased
 
-[Full Changelog](https://github.com/facebook/facebook-ios-sdk/compare/v15.1.0...HEAD)
+[Full Changelog](https://github.com/facebook/facebook-ios-sdk/compare/v16.1.0...HEAD)
+
+## 16.1.0
+
+### Fixed
+
+- Fix CAPI-G module
+
+[2023-04-21](https://github.com/facebook/facebook-ios-sdk/releases/tag/v16.1.0) |
+[Full Changelog](https://github.com/facebook/facebook-ios-sdk/compare/v16.0.1...v16.1.0)
+
+## 16.0.1
+
+### Changed
+- Flushed events if AEM Campaign ID is found
+
+[2023-03-22](https://github.com/facebook/facebook-ios-sdk/releases/tag/v16.0.1) |
+[Full Changelog](https://github.com/facebook/facebook-ios-sdk/compare/v16.0.0...v16.0.1)
+
+## 16.0.0
+
+### Added
+
+- Added AEM Auto Setup
+
+[2023-02-02](https://github.com/facebook/facebook-ios-sdk/releases/tag/v16.0.0) |
+[Full Changelog](https://github.com/facebook/facebook-ios-sdk/compare/v15.1.0...v16.0.0)
 
 ## 15.1.0
 
-### Changed 
+### Changed
 - The enum `AppLinkNavigation.Type` type has been renamed tp `AppLinkNavigationType`.
 - The initializer `init(appLink:extras:appLinkData:settings:)` in `AppLinkNavigation` ignores the `settings` argument if one is passed.
 - The method `navigation(with:extras:appLinkData:settings:)` in `AppLinkNavigation` ignores the `settings` argument if one is passed.
@@ -47,7 +73,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## 15.0.0
 
-### Changed 
+### Changed
 
 - The minimum supported version of iOS and tvOS is now 12.0.
 
